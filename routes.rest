@@ -1,0 +1,11 @@
+### Test all contacts on render
+GET https://cse341-projects-ly7b.onrender.com/contacts
+
+### Test one contact on render
+GET https://cse341-projects-ly7b.onrender.com/contacts/69adbbc1a16eb173ee2425af
+
+### Test all contacts locally
+GET http://localhost:8080/contacts
+
+### Test one contacts locally
+GET http://localhost:8080/contacts/69adbbc1a16eb173ee2425af
