@@ -4,8 +4,48 @@ GET https://cse341-projects-ly7b.onrender.com/contacts
 ### Test one contact on render
 GET https://cse341-projects-ly7b.onrender.com/contacts/69adbbc1a16eb173ee2425af
 
+
+
+
+
 ### Test all contacts locally
 GET http://localhost:8080/contacts
 
 ### Test one contacts locally
 GET http://localhost:8080/contacts/69adbbc1a16eb173ee2425af
+
+### Create contact
+POST http://localhost:8080/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName":"George",
+    "lastName":"Thomas",
+    "email":"george@gmail.com",
+    "favoriteColor":"red",
+    "birthday":"12/25/2001"
+}
+
+### Update contact
+POST http://localhost:8080/contacts/69adbceca16eb173ee2425b1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName":"Dena",
+    "lastName":"Padilla",
+    "email":"denapadilla@gmail.com",
+    "favoriteColor":"green",
+    "birthday":"07/15/1997"
+}
+
+### Update contact
+DELETE http://localhost:8080/contacts/69adbcbaa16eb173ee2425b0 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName":"Dena",
+    "lastName":"Padilla",
+    "email":"denapadilla@gmail.com",
+    "favoriteColor":"green",
+    "birthday":"07/15/1997"
+}
